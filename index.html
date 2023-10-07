@@ -2,19 +2,98 @@
 <html>
     <head>
         <title> Antonio's Website </title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            h1, h2, h3 {
+                font-family: Georgia, serif;
+            }
+            nav{
+                text-decoration: underline;
+                background-color: orange;
+                font-weight: 500;
+                font-size: 18px;
+                margin: 20px;
+                padding: 20px;
+                border-radius:25px
+            }
+            
+            .navbar {
+                box-shadow: 0 12px 18px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+            a:hover{
+                font-weight: 1000;
+            }
+            a:active{
+                font-size: 19px;
+            }
+            a:visited {
+                color: rgb(142, 6, 6);
+            }
+            main{
+                color:brown;
+            }
+            h1{
+                text-decoration: underline;
+                color:darkred;
+            }
+            .flex-container > div {
+                background-color: #038995;
+                border-radius:25px;
+                margin: 10px;
+                padding: 20px;
+                font-size: 16px;
+            }
+            .flex-container {
+                display: flex;
+            }
+            body {
+                background-color: #038995;
+            }
+            .about {
+                display: flex;
+                align-items: center;
+            }
+            .about-image {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .about-text {
+                flex: 1; 
+                padding: 20px; 
+            }
+
+            .about-text p {
+                margin: 0; 
+            }
+            .footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+            }
+        </style>
     </head>
     <body>
         <nav class="navbar">
             <h1 class = "logo">
-                <a href="index.html">personal website</a>
+                <a href="index.html">Personal Website</a>
             </h1>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
+            <div class = "flex-container">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="blog.html">Blog</a></div>
+                <div><a href="portfolio.html">Portfolio</a></div>
+                <div><a href="resume.html">Resume</a></div>
+                <div><a href="contact.html">Contact</a></div>
+            </div>
         </nav>
 
         <main>
